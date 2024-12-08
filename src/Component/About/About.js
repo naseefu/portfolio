@@ -68,10 +68,10 @@ const About = () => {
       <button ref={(el)=>sectionsRef.current[8]=el} className='about2 border-2 border-white px-6 py-2 rounded-xl hover:bg-white hover:text-black transition duration-300 ease font-[600]' onClick={()=>navigate("/contact")}>CONTACT NOW</button>
     </div>
     <div className='abouts flex items-center justify-center mt-14 mb-20 gap-8'>
-      <a target='/' href='https://www.linkedin.com/in/naseefu-rahman-karumannil/'><img ref={(el)=>sectionsRef.current[9]=el} className='logo1 cursor-pointer h-[30px] rotate-[20deg]' src='https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000' alt='linkedin'/></a>
-      <a target='/' href='https://github.com/naseefu'><img ref={(el)=>sectionsRef.current[10]=el} className='logo2 cursor-pointer h-[30px] rounded-[30px] bg-white rotate-[-20deg]' src='https://img.icons8.com/?size=100&id=62856&format=png&color=000000' alt='linkedin'/></a>
-      <a target='/' href='mailto:naseefrahman90@gmail.com'><img ref={(el)=>sectionsRef.current[11]=el} className='logo3 cursor-pointer h-[30px] bg-white rounded-[15px] p-1 rotate-[-10deg]' src='https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000' alt='linkedin'/></a>
-      <a target='/' href='https://www.instagram.com/_naseef____/?igsh=ZTVpaGVwbjVxenow&utm_source=qr#'><img ref={(el)=>sectionsRef.current[12]=el} className='logo4 cursor-pointer h-[30px] rotate-[20deg]' src='https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000' alt='linkedin'/></a>
+      <a target='/' href='https://www.linkedin.com/in/naseefu-rahman-karumannil/'><img ref={(el)=>sectionsRef.current[9]=el} className='logo1 cursor-pointer h-[30px] rotate-[20deg]' style={{rotate:'20deg'}} src='https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000' alt='linkedin'/></a>
+      <a target='/' href='https://github.com/naseefu'><img ref={(el)=>sectionsRef.current[10]=el} className='logo2 cursor-pointer h-[30px] rounded-[30px] bg-white rotate-[-20deg]' style={{rotate:'-20deg'}} src='https://img.icons8.com/?size=100&id=62856&format=png&color=000000' alt='linkedin'/></a>
+      <a target='/' href='mailto:naseefrahman90@gmail.com'><img ref={(el)=>sectionsRef.current[11]=el} className='logo3 cursor-pointer h-[30px] bg-white rounded-[15px] p-1 rotate-[-10deg]' style={{rotate:'-10deg'}} src='https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000' alt='linkedin'/></a>
+      <a target='/' href='https://www.instagram.com/_naseef____/?igsh=ZTVpaGVwbjVxenow&utm_source=qr#'><img ref={(el)=>sectionsRef.current[12]=el} className='logo4 cursor-pointer h-[30px] rotate-[20deg]' style={{rotate:'20deg'}} src='https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000' alt='linkedin'/></a>
       </div>
     </div>
   )
