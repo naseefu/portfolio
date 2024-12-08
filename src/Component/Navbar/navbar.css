@@ -1,0 +1,46 @@
+.menu{
+  transition: all 0.4s ease;
+}
+.menu:hover{
+  transform: rotate(60deg);
+  cursor: pointer;
+}
+
+.footer{
+  color: transparent;
+  background: linear-gradient(to right,white,rgb(61, 61, 61),white,rgb(61, 61, 61),white,rgb(61, 61, 61));
+  background-clip: text;
+}
+
+.overy::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+
+.homea{
+}
+
+.homea:hover{
+  animation: anim1 0.4s linear,anim2 0.4s 0.4s linear;
+}
+
+@keyframes anim1 {
+  from{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes anim2 {
+  from{
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

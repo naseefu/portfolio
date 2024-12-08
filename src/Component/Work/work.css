@@ -1,0 +1,45 @@
+.works img{
+  transition: all 0.5s ease;
+}
+
+.works .backgs:hover{
+  transform: scale(1.1);
+}
+
+.zoomer{
+  transition: all 0.3s ease;
+}
+
+.zoomer:hover{
+  transform: scale(1.1);
+}
+
+.scrollsec::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+
+.wcard {
+  background-color: #0D0D0D;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mainwork p{
+  opacity: 0;
+  transform: translateY(50px);
+  transform-origin: bottom;
+  transition: opacity 1s ease,transform 1.5s ease;
+}
+
+.mainwork .show-section{
+
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.works1 .zoomer{
+  opacity: 0;
+  transition: opacity 1s ease,transform 0.3s ease;
+}
+.works1 .show-section{
+  opacity: 1;
+}

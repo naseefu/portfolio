@@ -1,0 +1,23 @@
+/* .ecard{
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #2d2d3077, #232526dc);
+  background: linear-gradient(to right, #2d2d305d 90%, #232526d3 140%);
+} */
+
+.expert1 p{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.expert2 .expert2card{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+
+.expert1 .show-section ,.expert2 .show-section{
+  opacity: 1;
+  transform: translateY(0);
+}
