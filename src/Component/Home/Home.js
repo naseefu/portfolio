@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { FaCircle } from "react-icons/fa";
 import './home.css'
-import img1 from '../../Images/Naseefu-rahman.JPG'
+import img1 from '../../Images/IMG_4273.jpg'
 import Work from '../Work/Work';
 import About from '../About/About';
 import Navbar from '../Navbar/Navbar';
