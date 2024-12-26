@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='about hidden lg:flex'>
-          <img ref={(el)=>sectionsRef.current[7]=el}  className='rounded-xl h-full object-cover max-h-[800px] w-[90%]' src={img1} alt=''/>
+          <img ref={(el)=>sectionsRef.current[7]=el}  className='rounded-xl h-full object-cover max-h-[600px] w-[90%]' src={img1} alt=''/>
         </div>
       </div>
     </div>
