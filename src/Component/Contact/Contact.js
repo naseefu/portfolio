@@ -67,8 +67,8 @@ const Contact = () => {
           <div className='mt-8'>
             <p ref={(el)=>sectionsRef.current[2]=el}  className='font-bold text-[20px] about2'>FILL THIS FORM OUT</p>
             <input ref={(el)=>sectionsRef.current[3]=el}  type='text' placeholder='Name' className='about2 bg-[#0d0d0d] w-full md:w-[90%] mt-5 px-2 rounded-xl pl-5 py-5 border border-gray-800' style={{outline:"none"}} required/>
-            <input ref={(el)=>sectionsRef.current[4]=el}  type='text' placeholder='E-Mail' className='about2 bg-[#0d0d0d] w-full md:w-[90%] mt-5 px-2 rounded-xl pl-5 py-5' style={{outline:"none"}} required/>
-            <textarea ref={(el)=>sectionsRef.current[5]=el}  type='text' placeholder='Message' className='about2 bg-[#0d0d0d] w-full md:w-[90%] h-[200px] mt-5 px-2 rounded-xl pl-5 py-5' style={{outline:"none",resize:'none'}} required/>
+            <input ref={(el)=>sectionsRef.current[4]=el}  type='text' placeholder='E-Mail' className='about2 bg-[#0d0d0d] w-full md:w-[90%] mt-5 px-2 rounded-xl pl-5 py-5 border border-gray-800' style={{outline:"none"}} required/>
+            <textarea ref={(el)=>sectionsRef.current[5]=el}  type='text' placeholder='Message' className='about2 bg-[#0d0d0d] w-full md:w-[90%] h-[200px] mt-5 px-2 rounded-xl pl-5 py-5 border border-gray-800' style={{outline:"none",resize:'none'}} required/>
             <button ref={(el)=>sectionsRef.current[6]=el}  className=' about2 text-center mt-5 bg-white text-black w-full md:w-[90%] py-5 border border-white hover:border-[rgba(255,255,255,0.15)] font-bold rounded-xl 
              hover:bg-[rgba(255,255,255,0.07)] hover:text-white transition duration-300 ease items-center flex justify-center gap-2' onClick={()=>!error&&setError(true)} style={{backgroundColor:error&&'red',borderColor:error&&'red',color:error&&'white'}}>{error?<><MdOutlineErrorOutline/> SERVER DOWN</>:"SEND EMAIL"}</button>
           </div>
