@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
-import img1 from '../About/img4.jpg'
+import img1 from '../../Images/IMG_3784.JPG'
 import ScrollToTop from '../Navbar/Scroller'
 import { MdOutlineErrorOutline } from "react-icons/md";
 
