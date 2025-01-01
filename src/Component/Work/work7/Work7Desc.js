@@ -1,15 +1,16 @@
 import React, { useRef, useState } from 'react'
 import Navbar from '../../Navbar/Navbar';
-import img1 from './task1.png'
+import img1 from './image.png'
 import '../work.css'
 import {FaArrowRightLong} from 'react-icons/fa6'
+import kafka from '../../Expertise/svgs/kafka.svg'
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Footer from '../../Navbar/Footer';
 import ScrollToTop from '../../Navbar/Scroller';
 import ImageBanner from '../../Articles/ImageBanner';
 
-const Work4Desc = () => {
+const Work7Desc = () => {
 
   return (
     <div className='max-w-[2000px] mx-auto'>
@@ -23,10 +24,9 @@ const Work4Desc = () => {
       </div>
     <div className='w-[90%] mx-auto pt-[50px] -mt-20'>
       <div className='text-left text-gray-400 text-[20px] w-[100%] md:w-[70%]'>
-        <h1 className='text-left text-white text-[30px] md:text-[5vw] xl:text-[60px] font-bold'>TaskFlow - Task Management Web Application</h1>
-        <p className='mt-5'> Developed a task management web application using Spring Boot, React and MySQL.</p>
-        <p>Effortlessly manage teams, projects, and tasks by organizing projects under teams and assigning tasks for efficient
- tracking.</p>
+        <h1 className='text-left text-white text-[30px] md:text-[5vw] xl:text-[60px] font-bold'>Lustre - Ecommerce Web Application</h1>
+        <p className='mt-5'> Developed an E-commerce Web Application using Spring Boot, React, MySQL, Microservices, Kafka, Eureka, and API Gateway.</p>
+        <p>Seamlessly shop for men's, women's, and kids' fashion with a robust and scalable platform built for exceptional performance and user experience.</p>
       </div>
       
     <div className="py-[10px]">
@@ -34,27 +34,22 @@ const Work4Desc = () => {
     </div>
     <div className='text-left pb-[55px] border-b border-gray-800'>
       <h1 className='font-bold text-[40px] mb-4'>Description</h1>
-      <p className='text-gray-400 w-[100%] md:w-[80%] text-[18px] md:text-[22px]'>A task management system designed for teams to efficiently manage projects, assign tasks, and monitor progress.</p>
+      <p className='text-gray-400 w-[100%] md:w-[80%] text-[18px] md:text-[22px]'>An advanced e-commerce system offering a wide range of fashion products for men, women, and kids. Built with a microservices architecture, it ensures scalability, efficient communication, and seamless API management.</p>
     </div>
     <div className='mt-10 text-left pb-[55px] border-b border-gray-800'>
       <h1 className='font-bold text-[40px] mb-4'>Key Features</h1>
-      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>Team Collaboration</span>: Enables users to create teams, assign roles, and manage tasks effectively.</p>
-      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>Progress Tracking</span>: Dashboard showing real-time project status and task updates.</p>
-      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%]'><span className='text-white'>User Roles</span>: Different user permissions for administrators, managers, and team members.</p>
+      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>User-Friendly Shopping Experience</span>: Easy navigation and seamless browsing of products across categories.</p>
+      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>Order Management</span>: Track orders from placement to delivery.</p>
+      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>Secure Authentication</span>: JWT-based authentication for secure user sessions.</p>
+      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>Real-time Notifications</span>: Kafka-driven real-time updates for order status and inventory changes.</p>
+      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%] mb-4'><span className='text-white'>Role-based Access Control</span>: Separate user roles for customers, vendors, and admins.</p>
     </div>
     <div className='scrollsec w-[100%] flex flex-row overflow-auto gap-10 mx-auto mt-20 mb-10'>
-      <img className='rounded-xl h-[200px] md:h-[500px] brightness-[50%] object-cover' src='https://res.cloudinary.com/dk8rmxjfu/image/upload/v1733599431/Screenshot_2024-10-21_210305_z9tfsf.png' alt=''/>
-      <img className='rounded-xl h-[200px] md:h-[500px] brightness-[50%] object-cover'  src='https://res.cloudinary.com/dk8rmxjfu/image/upload/v1733599430/Screenshot_2024-10-21_210345_si9xq8.png' alt=''/>
-      <img className='rounded-xl h-[200px] md:h-[500px] brightness-[50%] object-cover'  src='https://res.cloudinary.com/dk8rmxjfu/image/upload/v1733599428/Screenshot_2024-10-21_210432_sr0gp5.png' alt=''/>
-      <img className='rounded-xl h-[200px] md:h-[500px] brightness-[50%] object-cover'  src='https://res.cloudinary.com/dk8rmxjfu/image/upload/v1733599428/Screenshot_2024-10-21_210405_syuame.png' alt=''/>
-      <img className='rounded-xl h-[200px] md:h-[500px] brightness-[50%] object-cover'  src='https://res.cloudinary.com/dk8rmxjfu/image/upload/v1733599428/Screenshot_2024-10-21_210324_ije19z.png' alt=''/>
-    </div>
-    <div className='mb-10 flex justify-end'>
-      <p className='text-left flex items-center gap-2 text-[14px]'><FaArrowRightLong/>More Images</p>
+      <img className='rounded-xl border border-gray-800 h-[200px] md:h-[500px] brightness-[50%] object-cover' src={img1} alt=''/>
     </div>
     <div className='text-left pb-[55px] border-b border-t pt-[55px] border-gray-800'>
       <h1 className='font-bold text-[40px] mb-4'>Role</h1>
-      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%]'>Built REST APIs for project and task management, implemented frontend features for task tracking, and ensured responsive UI for better user experience.</p>
+      <p className='text-[18px] md:text-[22px] text-gray-400 w-[100%] md:w-[80%]'>Developed REST APIs for product management, authentication, and order processing<br></br>Implemented real-time communication between services using Kafka<br/>Configured Eureka Service Discovery and API Gateway for centralized routing and load balancing.</p>
     </div>
     <div className='text-left pb-[55px] pt-[55px] border-gray-800'>
       <h1 className='font-bold text-[40px] mb-4'>Technologies</h1>
@@ -62,9 +57,13 @@ const Work4Desc = () => {
               <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[35px] -mt-1.5' src='https://img.icons8.com/?size=100&id=13679&format=png&color=000000' alt='java'/> Java</p>
               <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px]' src='https://img.icons8.com/?size=100&id=90519&format=png&color=000000' alt='java'/> Spring Boot</p>
               <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px]' src='https://img.icons8.com/?size=100&id=123603&format=png&color=000000' alt='java'/> React</p>
+              <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px]' src='https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000' alt='java'/> MongoDB</p>
               <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px]' src='https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000' alt='java'/> MySQL</p>
               <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px] rounded-xl' src='https://cdn.brandfetch.io/id2vqrnWlC/w/400/h/400/theme/dark/icon.jpeg?c=1bfwsmEH20zzEfSNTed' alt='java'/> Cloudinary</p>
-        </div>
+              <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px] rounded-xl' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7a-y7kx3D84D0UbUD2ZjCn7R8aFUD6uaNsS86-XflI291ewTx342xBzSe1NBXG16gHtA&usqp=CAU' alt='java'/> Gateway</p>
+              <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.9)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[25px] rounded-xl' src={kafka} alt='java'/></p>
+             <p className='flex items-center gap-2 bg-[rgba(255,255,255,0.1)] py-1.5 px-2 pr-5 w-[fit-content] rounded-xl'><img className='h-[30px] rounded-xl' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvwwh-PUHIjq-q8ROzHkg6lyPscpx1PvzfA&s" alt='java'/>Eureka</p>
+      </div>
     </div>
     <div>
       <Footer/>
@@ -82,7 +81,7 @@ const ImageSection = ({ image,index }) => {
     offset: ["start end", "end start"]
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.30, 1.15, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.15, 1.15, 1.15]);
 
   return (
       <div 
@@ -96,7 +95,7 @@ const ImageSection = ({ image,index }) => {
         <motion.img
           src={image}
           alt='img'
-          className={`w-[100%] border border-gray-800 max-w-[190%] md:w-[90%] md:max-w-[90%] md:h-[420px] overflow-hidden mx-auto h-[200px] max-h-[600px] ${index==='1'&&'max-h-[500px]'} object-cover`}
+          className={`w-[100%] border border-gray-800 max-w-[190%] md:w-[90%] md:max-w-[90%] md:h-[400px] overflow-hidden mx-auto h-[200px] max-h-[600px] ${index==='1'&&'max-h-[500px]'} object-cover`}
           loading="lazy"
           onError={(e) => {
             e.target.src = "https://images.unsplash.com/photo-1682687220063-4742bd7fd538";
@@ -108,4 +107,4 @@ const ImageSection = ({ image,index }) => {
   )
 }
 
-export default Work4Desc
+export default Work7Desc

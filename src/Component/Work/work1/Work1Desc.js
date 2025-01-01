@@ -8,6 +8,7 @@ import img6 from './6.png'
 import img7 from './Screenshot 2024-12-01 155728.png'
 import { FaPlay } from "react-icons/fa";
 import '../work.css'
+import ImageBanner from '../../Articles/ImageBanner'
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from '../../Navbar/Navbar'
@@ -30,9 +31,13 @@ const Work1Desc = () => {
     <div className='max-w-[2000px] mx-auto'>
       <ScrollToTop/>
       <div>
+        <ImageBanner link={img1}/>
+      </div>
+      <div className=' bg-neutral-950'>
+      <div className='absolute top-1 w-[100%]'>
         <Navbar/>
       </div>
-    <div className='w-[90%] mx-auto pt-[80px]'>
+    <div className='w-[90%] mx-auto pt-[50px] -mt-20'>
       <div className='text-left text-gray-400 text-[20px] w-[100%] md:w-[70%]'>
         <h1 className='text-left text-white text-[30px] md:text-[5vw] xl:text-[60px] font-bold'>FitSync - Fitness Tracker</h1>
         <p className='mt-5'>A fitness tracker website to log workouts, monitor progress, and get AI-powered personalized tips.</p>
@@ -82,7 +87,7 @@ const Work1Desc = () => {
     <div>
       <Footer/>
     </div>
-    </div>
+    </div></div>
     </div>
   );
 
@@ -95,16 +100,16 @@ const ImageSection = ({ image,index }) => {
     offset: ["start end", "end start"]
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.30, 1.15, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 1]);
 
   return (
       <div 
       ref={ref}
-      className={`py-[110px] ${index==='1'&&'py-[60px]'} flex items-center justify-start  p-4 mb-2`}
+      className={`py-[110px] ${index==='1'&&'py-[60px]'} flex items-center justify-start  mb-2`}
     >
       <motion.div
         style={{ scale }}
-        className="relative mx-auto w-[90%] max-w-[90%] rounded-2xl shadow-2xl"
+        className="relative mx-auto w-[100%] max-w-[100%] rounded-2xl shadow-2xl"
       >
         <motion.img
           src={image}

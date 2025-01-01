@@ -57,7 +57,7 @@ const About = () => {
        scalable, and user-focused applications. With a strong full-stack development background, I've designed and implemented various projects, 
         from web apps to AI platforms, focusing on seamless user experiences and optimizing backend performance and scalability.</p>
         <p ref={(el)=>sectionsRef.current[5]=el} className='about1 my-10 cursor-pointer bg-white text-black w-[fit-content] px-4 py-1 font-[500] rounded-xl mx-auto hover:bg-black hover:text-white border-[2px] hover:border-white transition duration-300'><a className='flex items-center gap-2' href='/Resume-Naseefu-Rahman-Karumannil.pdf' download={true} >
-          <span><IoCloudDownloadOutline/></span>Download Resume</a></p>
+          <span><IoCloudDownloadOutline/></span>Resume</a></p>
     </div> 
     </div>
     <div className='about font-bold text-[45px] md:text-[6vw] lg:text-[100px] mt-10 pt-20'>
@@ -71,7 +71,9 @@ const About = () => {
       <a target='/' href='https://www.linkedin.com/in/naseefu-rahman-karumannil/'><img ref={(el)=>sectionsRef.current[9]=el} className='logo1 cursor-pointer h-[30px] rotate-[20deg]' style={{rotate:'20deg'}} src='https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000' alt='linkedin'/></a>
       <a target='/' href='https://github.com/naseefu'><img ref={(el)=>sectionsRef.current[10]=el} className='logo2 cursor-pointer h-[30px] rounded-[30px] bg-white rotate-[-20deg]' style={{rotate:'-20deg'}} src='https://img.icons8.com/?size=100&id=62856&format=png&color=000000' alt='linkedin'/></a>
       <a target='/' href='mailto:naseefrahman90@gmail.com'><img ref={(el)=>sectionsRef.current[11]=el} className='logo3 cursor-pointer h-[30px] bg-white rounded-[15px] p-1 rotate-[-10deg]' style={{rotate:'-10deg'}} src='https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000' alt='linkedin'/></a>
-      <a target='/' href='https://www.instagram.com/_naseef____/?igsh=ZTVpaGVwbjVxenow&utm_source=qr#'><img ref={(el)=>sectionsRef.current[12]=el} className='logo4 cursor-pointer h-[30px] rotate-[20deg]' style={{rotate:'20deg'}} src='https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000' alt='linkedin'/></a>
+      <a target='/' href='https://www.instagram.com/_naseef____/?igsh=ZTVpaGVwbjVxenow&utm_source=qr#'>
+      <img ref={(el)=>sectionsRef.current[12]=el} className='logo4 cursor-pointer h-[30px] rotate-[20deg]' style={{rotate:'20deg'}} 
+      src='https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000' alt='linkedin'/></a>
       </div>
     </div>
   )

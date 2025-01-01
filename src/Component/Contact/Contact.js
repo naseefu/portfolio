@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
-import img1 from '../../Images/IMG_3784.JPG'
+import img1 from '../../Images/IMG_4273.jpg'
 import ScrollToTop from '../Navbar/Scroller'
 import { MdOutlineErrorOutline } from "react-icons/md";
+import GradientEffect from '../Commons/GradientEffect';
 
 const Contact = () => {
 
@@ -56,6 +57,10 @@ const Contact = () => {
 
   return (
     <div>
+      <div>
+        <GradientEffect/>
+      </div>
+      <div className='absolute top-4'>
       <ScrollToTop/>
       <div>
         <Navbar/>
@@ -74,10 +79,10 @@ const Contact = () => {
           </div>
         </div>
         <div className='about hidden lg:flex'>
-          <img ref={(el)=>sectionsRef.current[7]=el}  className='rounded-xl h-full object-cover max-h-[600px] w-[90%]' src={img1} alt=''/>
+          <img ref={(el)=>sectionsRef.current[7]=el}  className='rounded-xl h-full object-cover max-h-[700px] w-[90%]' src={img1} alt=''/>
         </div>
       </div>
-    </div>
+    </div></div>
   )
 }
 

@@ -6,6 +6,7 @@ import Work3 from './Work3';
 import Work4 from './Work4';
 import Work5 from './Work5';
 import Work6 from './Work6';
+import Work7 from './Work7';
 
 const Work = () => {
 
@@ -52,6 +53,9 @@ const Work = () => {
         </div>
         <div className='works'>
         <div className='work1 mt-[60px] pb-[50px]'>
+          <Work7/>
+        </div>
+        <div className='work1 mt-[60px] pb-[50px]'>
           <Work1/>
         </div>
         <div className='work2 flex gap-10 mt-[10px] md:mt-[60px] pb-[50px] lg:w-[100%] xl:w-[90%] mx-auto flex-wrap xl:flex-nowrap'>
@@ -69,7 +73,7 @@ const Work = () => {
         <div className='text-left w-[90%] mx-auto mt-10'>
           <h1 className='font-bold text-[40px]'>EXPLORE MORE WORKS</h1>
           <p className='mt-3 text-[20px] text-[gray] md:w-[70%]'>Want to see more of my work? Check out my GitHub for a deeper dive into the projects I've built, ranging from innovative web apps to complex full-stack solutions.</p>
-          <a href='https://github.com/naseefu'><button className='mt-5 text-[14px] font-bold flex items-center gap-3 bg-[#0d0d0d] border border-gray-900 py-2 px-10 pl-4 rounded-xl hover:bg-white hover:text-black hover:border-white transition duration-300'><span><img src='https://img.icons8.com/?size=100&id=62856&format=png&color=000000' className='bg-white h-[30px] rounded-[30px]'/></span> Visit My GitHub</button></a>
+          <a href='https://github.com/naseefu'><button className='mt-5 text-[14px] font-bold flex items-center gap-3 bg-[#0d0d0d] border border-[rgba(255,255,255,0.1)] py-2 px-10 pl-4 rounded-xl hover:bg-white hover:text-black hover:border-white transition duration-300'><span><img src='https://img.icons8.com/?size=100&id=62856&format=png&color=000000' className='bg-white h-[30px] rounded-[30px]'/></span> Visit My GitHub</button></a>
         </div>
         
     </div>

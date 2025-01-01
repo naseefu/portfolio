@@ -4,6 +4,7 @@ import { IoCloudDownloadOutline } from "react-icons/io5";
 import Navbar from '../Navbar/Navbar';
 import ScrollToTop from '../Navbar/Scroller';
 import './about.css'
+import GradientEffect from '../Commons/GradientEffect';
 
 const MainAbout = () => {
 
@@ -44,6 +45,10 @@ const MainAbout = () => {
 
   return (
     <div>
+      <div>
+        <GradientEffect/>
+      </div>
+      <div className='absolute top-4'>
       <ScrollToTop/>
       <Navbar/>
     <div className='pt-[30px] md:pt-[80px]'>
@@ -64,7 +69,7 @@ Based in Malappuram, Kerala, I draw inspiration from a vibrant tech community an
           <span><IoCloudDownloadOutline/></span>Download Resume</a></p>
     </div> 
     </div>
-    </div>
+    </div></div>
   )
 }
 

@@ -42,9 +42,10 @@ const Navbar = () => {
             <p><span className='text-gray-400'>LOCAL/</span>{currentTime}</p>
             <p onClick={()=>setMenu(false)} className='border-[2px] cursor-pointer border-gray-600 text-gray-400 px-3 py-1 rounded-[20px] hover:bg-white hover:text-black hover:border-black transition duration-300'>X</p>
           </div>
-          <div className='flex flex-col items-center text-[40px] md:text-[70px] lg:text-[90px] font-bold'>
+          <div className='flex md:pb-40 flex-col items-center text-[40px] md:text-[70px] lg:text-[90px] font-bold'>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("")}><a>HOME</a></h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("work")}><a href=''>WORKS</a></h1>
+            <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("articles")}><a href=''>ARTICLES</a></h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("about")}>ABOUT</h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("contact")}>CONTACT</h1>
           </div>

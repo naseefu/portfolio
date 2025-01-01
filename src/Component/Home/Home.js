@@ -1,15 +1,15 @@
 import React, { useEffect, useRef } from 'react'
-import { FaCircle } from "react-icons/fa";
+import { FaArrowRight, FaCircle } from "react-icons/fa";
 import './home.css'
 import img1 from '../../Images/IMG_4273.jpg'
 import Work from '../Work/Work';
 import About from '../About/About';
 import Navbar from '../Navbar/Navbar';
-import Footer from '../Navbar/Footer';
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ScrollToTop from '../Navbar/Scroller';
 import Expertise from '../Expertise/Expertise';
 import Motivation from '../Expertise/Motivation';
+import Articles from '../Articles/Articles';
 
 const Home = () => {
 
@@ -62,6 +62,7 @@ const Home = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
   }
 
+  const navigate=useNavigate()
 
   return (
     <div className='home max-w-[2000px] mx-auto'>
@@ -88,7 +89,17 @@ const Home = () => {
           <p>Based in Kerala, India</p>
           <p>Backend Developer <span className='text-gray-500'>+ Frontend Developer</span></p>
         </div>
-        <img ref={(el) => sectionsRef.current[6] = el} src={img1} alt="image" className='w-[100%] rounded-xl h-[130vh] h-[40vh] md:h-[60vh] lg:h-[90vh] xl:h-[120vh] object-cover'/>
+        <img ref={(el) => sectionsRef.current[6] = el} src={img1} alt="image" className='w-[100%] rounded-xl min-h-[250px] md:min-h-[400px] lg:min-h-[500px] lg:max-h-[900px] h-[130vh] h-[40vh] md:h-[60vh] lg:h-[90vh] xl:h-[120vh] object-cover'/>
+      </div>
+      <div className='px-5 md:px-20 lg:px-40'>
+      <div className='flex mt-40 flex-col font-bold text-[45px] md:text-[7vw] xl:text-[100px]'>
+                <h1 className='m-0'>FEATURED</h1>
+                <h1 className='m-0 mt-[-10px] md:mt-[-30px] lg:mt-[-40px] xl:mt-[-60px]'>ARTICLES</h1>
+        </div>
+        <Articles web={20}/>
+        <div className='items-center flex justify-center'>
+          <button onClick={()=>navigate("/articles")} className='border border-gray-800 p-2 px-5 rounded-2xl flex gap-2 items-center justify-center hover:bg-white hover:text-black transition duration-300'>See more posts <span className='text-[13px]'><FaArrowRight></FaArrowRight></span></button>
+        </div>
       </div>
       <div className='work' id='work'>
         <Work/>

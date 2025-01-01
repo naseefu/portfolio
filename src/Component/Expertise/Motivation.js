@@ -101,13 +101,13 @@ const Motivation = () => {
       <div className='expert2 md:min-h-[50vh]'>
         <h1 ref={(el)=>sectionsRef.current[3]=el} className='expert2card font-bold md:sticky md:top-20 text-[35px] md:text-[5vw] xl:text-[60px]'>EXPERIENCE</h1>
       </div>
-      <div className='expert2 font-[600] flex flex-col gap-10 text-[20px] text-gray-300'>
-        <p ref={(el)=>sectionsRef.current[4]=el} className='text-[30px] expert2card'>INMAKES INFOTECH</p>
+      <div className='expert2 font-[600] flex flex-col gap-10 text-[18px] md:text-[20px] text-gray-300 border border-[rgba(255,255,255,0.1)] p-6 rounded-xl'>
+        <p ref={(el)=>sectionsRef.current[4]=el} className='text-[25px] md:text-[30px] expert2card'>INMAKES INFOTECH</p>
         <div ref={(el)=>sectionsRef.current[5]=el} className='expert2card flex flex-col gap-1 md:flex-row justify-between'>
           <p>FULL STACK DEVELOPER</p>
           <p>2023-2024</p>
         </div>
-        <div ref={(el)=>sectionsRef.current[6]=el} className=' expert2card text-[18px] flex flex-col gap-4 text-[gray]'>
+        <div ref={(el)=>sectionsRef.current[6]=el} className=' expert2card text-[16px] md:text-[18px] flex flex-col gap-4 text-[gray]'>
           <p>I focused on Java-based full-stack development, gaining experience with Spring Boot, Hibernate, and ReactJS.</p>
           <p>My responsibilities included backend development with Spring Boot, efficient data management using MySQL, RESTful
  API integration, and building dynamic front-end interfaces with ReactJS.</p>
@@ -129,9 +129,9 @@ const Motivation = () => {
               <img src={s.logo} alt='' className='h-[40px] md:h-[auto]'/>
             </div>
             <div className='bg-[#0d0d0d] font-bold flex flex-col gap-3 rounded-xl px-4 py-4 md:px-8 md:py-8' style={{border:'1px solid rgba(255,255,255,0.06)'}}>
-              <p className='text-[24px] md:text-[28px]'>{s.name}</p>
-              <p className='text-[17px] md:text-[20px]'>{s.type.toUpperCase()}</p>
-              <p className='text-[14px] md:text-[16px] text-[gray]'>{s.desc}</p>
+              <p className='text-[20px] md:text-[28px]'>{s.name}</p>
+              <p className='text-[14px] md:text-[18px]'>{s.type.toUpperCase()}</p>
+              <p className='text-[12px] md:text-[14px] text-[gray]'>{s.desc}</p>
             </div>
           </div>
         ))}

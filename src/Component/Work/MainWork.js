@@ -9,6 +9,8 @@ import Work6 from './Work6';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Navbar/Footer';
 import ScrollToTop from '../Navbar/Scroller';
+import GradientEffect from '../Commons/GradientEffect';
+import Work7 from './Work7';
 
 const MainWork = () => {
 
@@ -49,6 +51,10 @@ const MainWork = () => {
 
   return (
     <div>
+      <div>
+        <GradientEffect/>
+      </div>
+      <div className='absolute top-4'>
       <ScrollToTop/>
       <Navbar/>
     <div className='pt-[40px] md:pt-[100px]'>
@@ -58,6 +64,9 @@ const MainWork = () => {
           <p ref={(el)=>sectionsRef.current[2]=el} className='m-0 mt-[-10px] md:mt-[-30px] lg:mt-[-40px] xl:mt-[-60px]'>WORKS</p>
       </div>
 
+      <div className='mt-[60px] pb-[50px]'>
+        <Work7/>
+      </div>
       <div className='mt-[60px] pb-[50px]'>
         <Work1/>
       </div>
@@ -74,6 +83,7 @@ const MainWork = () => {
         <Work6/>
       </div>
      </div>
+    </div>
     </div>
   )
 }

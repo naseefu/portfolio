@@ -7,6 +7,7 @@ import {FaArrowRightLong} from 'react-icons/fa6'
 import { motion, useScroll, useTransform } from "framer-motion";
 import Footer from '../../Navbar/Footer';
 import ScrollToTop from '../../Navbar/Scroller';
+import ImageBanner from '../../Articles/ImageBanner';
 
 const Work5Desc = () => {
 
@@ -14,9 +15,13 @@ const Work5Desc = () => {
     <div className='max-w-[2000px] mx-auto'>
       <ScrollToTop/>
       <div>
+        <ImageBanner link={img1}/>
+      </div>
+      <div className=' bg-neutral-950'>
+      <div className='absolute top-1 w-[100%]'>
         <Navbar/>
       </div>
-    <div className='w-[90%] mx-auto pt-[80px]'>
+    <div className='w-[90%] mx-auto pt-[50px] -mt-20'>
       <div className='text-left text-gray-400 text-[20px] w-[100%] md:w-[70%]'>
         <h1 className='text-left text-white text-[30px] md:text-[5vw] xl:text-[60px] font-bold'>Eventura -  Event Management Platform</h1>
         <p className='mt-5'> Developed an event management website using Spring Boot, React, and MySQL, enabling interaction between event
@@ -67,7 +72,7 @@ const Work5Desc = () => {
       <Footer/>
     </div>
     </div>
-    </div>
+    </div></div>
   );
 
       };

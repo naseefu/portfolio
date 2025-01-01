@@ -46,7 +46,7 @@ const Work3 = () => {
   return (
     <div onClick={()=>navigate("/work/plotcraft")} className='wcard works1 cursor-pointer bg-[rgba(255,255,255,0.1)] w-[90%] mx-auto px-3 py-5 md:p-10 rounded-[20px]'>
             <div className='works mx-[auto] rounded-[20px]' style={{width:'95%',maxWidth:'95%',overflow:'hidden'}}>
-              <div ref={(el)=>sectionsRef.current[0]=el} className='zoomer mx-[auto] rounded-[20px] h-[30vh] md:h-[50vh] lg:h-[55vh] xl:h-[40vh]' style={{backgroundImage:`url(${img1})`,width:'100%',overflow:'hidden',backgroundSize:'cover'}}></div></div>
+              <div ref={(el)=>sectionsRef.current[0]=el} className='zoomer mx-[auto] rounded-[20px] h-[25vh] md:h-[50vh] lg:h-[55vh] xl:h-[40vh]' style={{backgroundImage:`url(${img1})`,width:'100%',overflow:'hidden',backgroundSize:'cover',backgroundPosition:'center'}}></div></div>
             <div>
               <div className='flex mx-[auto] justify-between py-10 pb-2 gap-4' style={{width:"95%",flexWrap:"wrap"}}>
                 <p className='font-bold text-[20px] flex items-center gap-3 text-left'>PlotCraft - AI Powered Story Builder Platform <span className='text-black bg-white p-1.5 rounded-[20px]'><GoArrowUpRight/></span></p>

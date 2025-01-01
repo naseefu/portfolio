@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Effect with Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Ensure smooth mask gradient */
+    .mask-gradient {
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    }
+  </style>
+</head>
+<body class="text-white bg-black">
+  <div class="absolute overflow-hidden inset-0 h-[450px] bg-neutral-950" style="mask-image:linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)">
+    <div aria-hidden="true" class="h-[30px] w-[400px] rounded-r-[50%] bg-gradient-to-r from-green-700 via-green-700 to-[#818CF8]/80 blur-[32px] absolute -top-4 -translate-y-1/2 rotate-45 origin-left -left-4 z-[-1]">
+
+    </div>
+    <div aria-hidden="true" class="h-[400px] w-[650px] rounded-full bg-gradient-to-r from-[#2E996C]/30 to-[#0F3324]/30 blur-[150px] absolute top-0 -translate-y-full rotate-45 origin-left z-[-2] left-[15%]">
+        
+    </div></div>
+
+</body>
+</html>
