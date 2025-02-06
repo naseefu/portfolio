@@ -83,6 +83,11 @@ const MainWork = () => {
         <Work6/>
       </div>
      </div>
+     <div className='text-left flex flex-col items-start justify-center w-[90%] mx-auto mt-10 mb-20 mx-auto w-[100%]'>
+          <h1 className='font-bold text-[40px]'>EXPLORE MORE WORKS</h1>
+          <p className='mt-3 text-[20px] text-[gray] md:w-[70%]'>Want to see more of my work? Check out my GitHub for a deeper dive into the projects I've built, ranging from innovative web apps to complex full-stack solutions.</p>
+          <a href='https://github.com/naseefu'><button className='mt-5 text-[14px] font-bold flex items-center gap-3 bg-[#0d0d0d] border border-[rgba(255,255,255,0.1)] py-2 px-10 pl-4 rounded-xl hover:bg-white hover:text-black hover:border-white transition duration-300'><span><img src='https://img.icons8.com/?size=100&id=62856&format=png&color=000000' className='bg-white h-[30px] rounded-[30px]'/></span> Visit My GitHub</button></a>
+      </div>
     </div>
     </div>
   )
