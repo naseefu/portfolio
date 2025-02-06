@@ -62,10 +62,10 @@ const Contact = () => {
       </div>
       <div className='absolute top-4'>
       <ScrollToTop/>
-      <div>
+      <div className='min-w-[100vw]'>
         <Navbar/>
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 w-[90%] mx-auto py-10' style={{alignItems:'stretch'}}>
+      <div className='grid grid-cols-1 lg:grid-cols-1 gap-10 w-[90%] mx-auto py-10' style={{alignItems:'stretch'}}>
         <div className='about text-left'>
           <p ref={(el)=>sectionsRef.current[0]=el} className='about1 text-[50px] font-bold text-left'>SAY HELLO!</p>
           <p ref={(el)=>sectionsRef.current[1]=el}  className='about1 text-gray-500 w-[90%] text-[18px] font-[500]'>My passion ignites in the world of technology. With ideas sparking like code coming to life, I craft solutions that bridge innovation and functionality.</p>
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='about hidden lg:flex'>
-          <img ref={(el)=>sectionsRef.current[7]=el}  className='rounded-xl h-full object-cover max-h-[700px] w-[90%]' src={img1} alt=''/>
+          {/* <img ref={(el)=>sectionsRef.current[7]=el}  className='rounded-xl h-full object-cover max-h-[700px] w-[90%]' src={img1} alt=''/> */}
         </div>
       </div>
     </div></div>
