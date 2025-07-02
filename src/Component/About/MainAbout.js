@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import img2 from './img4.jpg'
+import img3 from './img5.jpg'
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import Navbar from '../Navbar/Navbar';
 import ScrollToTop from '../Navbar/Scroller';
@@ -56,7 +57,7 @@ const MainAbout = () => {
       <p ref={(el)=>sectionsRef.current[0]=el} className='about1 m-0'>ABOUT ME</p>
     </div>
     <div className='about mt-[40px] p-3 md:p-10 w-[100%] md:w-[80%] mx-auto'>
-      <img ref={(el)=>sectionsRef.current[1]=el} className='rounded-[30px] h-[250px] md:h-[400px] lg:h-[500px] xl:h-[650px] object-cover w-[100%]' src={img2} alt='img'/>
+      <img ref={(el)=>sectionsRef.current[1]=el} className='rounded-[30px] h-[250px] md:h-[400px] lg:h-[500px] xl:h-[650px] object-cover w-[100%]' src={img3} alt='img'/>
       <p ref={(el)=>sectionsRef.current[2]=el} className='about1 my-10 mt-20 text-[19px] md:text-[30px] font-[600]' style={{fontFamily:'Lora'}}>" I am Naseefu — a <span>FullStack Developer</span> crafting seamless web solutions with expertise in both 
         <span className='text--600'> frontend</span> and <span className='text--600'>backend</span> technologies "</p>
       <p ref={(el)=>sectionsRef.current[3]=el} className='about1 text-[15px] md:text-[22px] text-gray-400'>I'm passionate about creating impactful software solutions, skilled in Java, Spring Boot, React, PostgreSQL, and AI. I aim to leverage cutting-edge technologies to solve real-world challenges and build efficient,
