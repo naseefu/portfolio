@@ -133,7 +133,7 @@ const Motivation = () => {
               ref={(el) => (sectionsRef.current[4] = el)}
               className="text-[25px] md:text-[30px] expert2card"
             >
-              TATA CONSULTACY SERVICES
+              TATA CONSULTANCY SERVICES
             </p>
             <div
               ref={(el) => (sectionsRef.current[5] = el)}
