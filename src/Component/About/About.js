@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import img3 from './img4.jpg'
+import img3 from './img5.jpg'
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import './about.css'
 import { useNavigate } from 'react-router-dom';
