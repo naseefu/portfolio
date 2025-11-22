@@ -75,9 +75,9 @@ const Awards = ({ web }) => {
             <h1 className='m-0'>AWARDS &</h1>
             <h1 className='m-0 mt-[-10px] md:mt-[-30px] lg:mt-[-40px] xl:mt-[-60px]'>APPRECIATION</h1>
           </div>}
-          <div className={`mt-20 mb-20 ${!web && 'lg:w-[80%] mx-auto'} flex flex-col gap-20`}>
+          <div className={`mt-20 mb-20 ${!web && 'lg:w-[80%] mx-auto'} flex md:flex-row md:flex-wrap md:justify-between flex-col gap-20`}>
             {articles.map((a, index) => (
-              web > 0 ? web === 20 ? index <= 2 &&
+              web > 0 ? web === 20 ? index <= 1 &&
 
                 <div key={index} className='flex flex-col text-left gap-10 justify-between cursor-pointer'>
                   <div className='flex flex-col gap-2'>
@@ -85,11 +85,11 @@ const Awards = ({ web }) => {
                     <p className='text-[24px] font-bold transition duration-300 ease hover:bg-gradient-to-r from-black via-green-950 to-green-900 w-[fit-content] pr-5 '>
                       {a.name}
                     </p>
-                    <p className='text-gray-400'>{a.description.slice(0, 100)}...</p>
+                    <p className='text-gray-400'>{a.description.slice(0,80)}....</p>
                   </div>
                   <div>
                     <img
-                      className='min-h-[200px] rounded-2xl max-h-[200px] min-w-[300px] max-w-[300px] object-cover cursor-pointer'
+                    className='min-h-[200px] rounded-2xl sm:max-h-[200px] md:max-h-[400px] min-w-[300px] sm:max-w-[300px] md:max-w-[1000px] object-cover cursor-pointer'
                       src={a.image}
                       alt={a.name}
                       onClick={() => setSelectedImage(a.image)}
@@ -108,7 +108,7 @@ const Awards = ({ web }) => {
                   </div>
                   <div>
                     <img
-                      className='min-h-[200px] rounded-2xl max-h-[200px] min-w-[300px] max-w-[300px] object-cover cursor-pointer'
+                    className='min-h-[200px] rounded-2xl sm:max-h-[200px] md:max-h-[500px] min-w-[300px] sm:max-w-[300px] md:max-w-[1200px] object-cover cursor-pointer'
                       src={a.image}
                       alt={a.name}
                       onClick={() => setSelectedImage(a.image)}
