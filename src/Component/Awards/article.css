@@ -1,0 +1,8 @@
+.programblock::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+.cliptext{
+    
+    color: white;
+}
