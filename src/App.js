@@ -37,6 +37,7 @@ function App() {
           <Route path='/articles/java-class-vs-java-record' element={<Article1/>}/>
           <Route path='/articles/api-gateway-eureka' element={<Article2/>}/>
           <Route path='/articles' element={<Articles/>}/>
+          <Route path='/awards' element={<Awards/>}/>
         </Routes>
       </Router>
     </div>
