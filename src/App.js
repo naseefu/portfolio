@@ -16,6 +16,7 @@ import Articles from './Component/Articles/Articles';
 import Test from './Component/Commons/GradientEffect';
 import Article2 from './Component/Articles/Article2/Article2';
 import Work7Desc from './Component/Work/work7/Work7Desc';
+import Awards from './Component/Awards/Awards';
 
 function App() {
   return (
