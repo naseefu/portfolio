@@ -10,6 +10,7 @@ import ScrollToTop from '../Navbar/Scroller';
 import Expertise from '../Expertise/Expertise';
 import Motivation from '../Expertise/Motivation';
 import Articles from '../Articles/Articles';
+import Awards from '../Awards/Awards';
 
 const Home = () => {
 
@@ -103,6 +104,16 @@ const Home = () => {
       </div>
       <div className='work' id='work'>
         <Work/>
+      </div>
+      <div className='px-5 md:px-20 lg:px-40'>
+      <div className='flex mt-40 flex-col font-bold text-[45px] md:text-[7vw] xl:text-[100px]'>
+                <h1 className='m-0'>AWARDS &</h1>
+                <h1 className='m-0 mt-[-10px] md:mt-[-30px] lg:mt-[-40px] xl:mt-[-60px]'>APPRECIATIONS</h1>
+        </div>
+        <Awards web={20}/>
+        <div className='items-center flex justify-center'>
+          <button onClick={()=>navigate("/awards")} className='border border-gray-800 p-2 px-5 rounded-2xl flex gap-2 items-center justify-center hover:bg-white hover:text-black transition duration-300'>See more awards <span className='text-[13px]'><FaArrowRight></FaArrowRight></span></button>
+        </div>
       </div>
       <div>
         <Expertise/>
