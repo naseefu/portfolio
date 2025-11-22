@@ -45,6 +45,7 @@ const Navbar = () => {
           <div className='flex md:pb-40 flex-col items-center text-[40px] md:text-[70px] lg:text-[90px] font-bold'>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("")}><a>HOME</a></h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("work")}><a href=''>WORKS</a></h1>
+            <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("awards")}><a href=''>AWARDS</a></h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("articles")}><a href=''>ARTICLES</a></h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("about")}>ABOUT</h1>
             <h1 className='homea md:-mb-6 cursor-pointer' onClick={()=>handleNavigate("contact")}>CONTACT</h1>
