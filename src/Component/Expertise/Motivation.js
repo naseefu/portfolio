@@ -140,7 +140,7 @@ const Motivation = () => {
               className="expert2card flex flex-col gap-1 md:flex-row justify-between"
             >
               <p>Product Engineer</p>
-              <p>2024-present</p>
+              <p>2025-present</p>
             </div>
             <div
               ref={(el) => (sectionsRef.current[6] = el)}
