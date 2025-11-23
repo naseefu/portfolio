@@ -140,7 +140,7 @@ const Motivation = () => {
               className="expert2card flex flex-col gap-1 md:flex-row justify-between"
             >
               <p>Product Engineer</p>
-              <p>2025-present</p>
+              <p>Jan 2025-present</p>
             </div>
             <div
               ref={(el) => (sectionsRef.current[6] = el)}
@@ -173,7 +173,7 @@ const Motivation = () => {
               className="expert2card flex flex-col gap-1 md:flex-row justify-between"
             >
               <p>FULL STACK DEVELOPER</p>
-              <p>2023-2024</p>
+              <p>Mar 2024-Sep 2024</p>
             </div>
             <div
               ref={(el) => (sectionsRef.current[9] = el)}
