@@ -51,6 +51,18 @@ const Awards = ({ web }) => {
       description: "Received for exceptional teamwork and immediate impactful contribution towards organisational goals."
     },
     {
+      date: "11-Nov-2025",
+      name: "tcsAI Idea Igniter",
+      image: "Appreciation_Certificate_page-0001.jpg",
+      description: "Recognized as a milestone achiever in the tcsAI Hackathon for innovative thinking and successful idea submission among the top entries."
+    },
+    {
+      date: "18-Aug-2025",
+      name: "tcsAI Spark",
+      image: "Appreciation_Certificate (1)_page-0001.jpg",
+      description: "Awarded for enthusiastic and prompt participation in the tcsAI Hackathon, acknowledging contributions in the journey of innovation and impact."
+    },
+    {
       date: "July 27, 2025",
       name: "Learning Achievement Award",
       image: "https://github.com/naseefu/portfolio/blob/main/src/Images/learning_achievement_page-0001.jpg?raw=true",
