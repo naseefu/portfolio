@@ -59,7 +59,7 @@ const Awards = ({ web }) => {
     {
       date: "18-Aug-2025",
       name: "tcsAI Spark",
-      image: "Appreciation_Certificate (1)_page-0001.jpg",
+      image: "https://github.com/naseefu/portfolio/blob/main/src/Component/Awards/Appreciation_Certificate%20(1)_page-0001.jpg?raw=true",
       description: "Awarded for enthusiastic and prompt participation in the tcsAI Hackathon, acknowledging contributions in the journey of innovation and impact."
     },
     {
