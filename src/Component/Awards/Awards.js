@@ -53,7 +53,7 @@ const Awards = ({ web }) => {
     {
       date: "11-Nov-2025",
       name: "tcsAI Idea Igniter",
-      image: "Appreciation_Certificate_page-0001.jpg",
+      image: "https://github.com/naseefu/portfolio/blob/main/src/Component/Awards/Appreciation_Certificate_page-0001.jpg?raw=true",
       description: "Recognized as a milestone achiever in the tcsAI Hackathon for innovative thinking and successful idea submission among the top entries."
     },
     {
