@@ -73,7 +73,7 @@ const Home = () => {
       </div>
       <div style={{paddingTop:"70px"}}>
         <p className='text-gray-400 font-bold' style={{margin:"0",display:'flex',alignItems:'center',justifyContent:'center',gap:"1rem"}}>
-          <span className='round text-green-500 blink-circle' style={{fontSize:'12px'}}><FaCircle /></span>Product Engineer at TCS</p>
+          <span className='round text-green-500 blink-circle' style={{fontSize:'12px'}}><FaCircle /></span>PRODUCT ENGINEER AT TCS</p>
         <div className='firstref relative flex mt-5 lg:mt-0 flex-col font-bold text-[45px] md:text-[9vw] xl:text-[140px]'>
           <p className='m-0 p-0' ref={(el) => sectionsRef.current[0] = el}>NASEEFU</p>
           <p className='m-0 mt-[-20px] md:mt-[-50px] lg:mt-[-60px] xl:mt-[-90px] p-0' ref={(el) => sectionsRef.current[1] = el}>KARUMANNIL</p>
