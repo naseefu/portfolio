@@ -147,17 +147,33 @@ const Motivation = () => {
               className=" expert2card text-[16px] md:text-[18px] flex flex-col gap-4 text-[gray]"
             >
               <p>
-              Currently working as a backend developer in the TCS BaNCS project, a core banking solution suite used by financial institutions globally.
+                Contributed to the development of a scalable Alerts and Notification platform supporting asynchronous, event-driven processing.
               </p>
               <p>
-              Responsible for designing and implementing scalable microservices using Java Spring Boot.
+                Implemented alert ingestion and processing workflows using Apache Kafka and ActiveMQ, including delayed message handling.
               </p>
               <p>
-              Ensure high performance, security, and reliability of backend systems in a distributed architecture.
+                Developed a fail-safe alert registration mechanism to persist notification payloads during service downtime and replay them after recovery.
               </p>
               <p>
-              Focus on maintaining clean architecture, best practices, and continuous delivery pipelines.
+                Built asynchronous notification pipelines to improve throughput and system responsiveness, handling 20K+ notifications per day.
               </p>
+              <p>
+                Identified performance bottlenecks caused by JPA persistence context growth and excessive DB calls; implemented EntityManager flush/clear with configurable thresholds (200–300 entities).
+              </p>
+              <p>
+                Optimized data access using batch inserts and query refactoring, achieving ~60% DB call reduction and ~50–70% latency improvement.
+              </p>
+              <p>
+                Integrated multiple notification channels including Email, SMS, REST, File-based delivery, JMS, and Push Notifications.
+              </p>
+              <p>
+                Implemented PII masking, encryption/decryption for secure payload storage, and JWT-based authentication for REST APIs.
+              </p>
+              <p>
+                Built resilience and recovery utilities including fail-safe registration, bulk resend processing, and supporting tools (SMTP/SMS simulators, XML-Excel conversion utilities), improving system reliability and fault tolerance.
+              </p>
+
             </div>
           </div>
 
