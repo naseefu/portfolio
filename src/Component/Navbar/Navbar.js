@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { CiGrid32 } from "react-icons/ci";
+import { BsSun, BsMoon } from "react-icons/bs";
 import {motion} from 'framer-motion'
 import './navbar.css'
 import { useNavigate } from 'react-router-dom'
+import { ThemeContext } from '../../ThemeContext'
 
 const Navbar = () => {
   const [currentTime, setCurrentTime] = useState('');
-
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const [menu,setMenu] = useState(false)
   const navigate = useNavigate()
 
@@ -65,9 +67,35 @@ const Navbar = () => {
      transition={{duration:1}}
      className='relative py-10 pb-7 md:pb-10 flex items-center justify-between w-[90%] mx-auto text-left border-b border-gray-700'>
       <p><span className='text-gray-400'>LOCAL/</span>{currentTime}</p>
-      <div className='menu flex flex-col' onClick={()=>setMenu(true)}>
-        <p className='text-[24px] text-white rounded-[40px] -mb-6 flex gap-1'><span>•</span>•</p>
-        <p className='text-[24px] text-white rounded-[40px] mt-0 flex gap-1'><span>•</span>•</p>
+      <div className='flex items-center gap-6'>
+        <div 
+          onClick={toggleTheme}
+          className='relative w-14 h-8 bg-gray-700 rounded-full cursor-pointer transition-colors duration-300 flex items-center'
+          style={{
+            backgroundColor: isDarkMode ? '#374151' : '#e5e7eb',
+            border: `2px solid ${isDarkMode ? '#4b5563' : '#d1d5db'}`
+          }}
+          title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+        >
+          {/* Toggle Circle */}
+          <div 
+            className='absolute w-6 h-6 bg-white rounded-full flex items-center justify-center transition-all duration-300'
+            style={{
+              left: isDarkMode ? '2px' : '26px',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+            }}
+          >
+            {isDarkMode ? (
+              <BsSun size={16} className='text-yellow-400' />
+            ) : (
+              <BsMoon size={16} className='text-gray-700' />
+            )}
+          </div>
+        </div>
+        <div className='menu flex flex-col' onClick={()=>setMenu(true)}>
+          <p className='text-[24px] text-white rounded-[40px] -mb-6 flex gap-1'><span>•</span>•</p>
+          <p className='text-[24px] text-white rounded-[40px] mt-0 flex gap-1'><span>•</span>•</p>
+        </div>
       </div>
       <p className='border-[2px] hidden md:flex cursor-pointer border-white py-2 px-3 rounded-xl hover:bg-white hover:text-black border-[2px] hover:border-black transition duration-300' onClick={()=>navigate("/contact")}>CONTACT NOW</p>
       

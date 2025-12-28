@@ -17,31 +17,34 @@ import Test from './Component/Commons/GradientEffect';
 import Article2 from './Component/Articles/Article2/Article2';
 import Work7Desc from './Component/Work/work7/Work7Desc';
 import Awards from './Component/Awards/Awards';
+import { ThemeProvider } from './ThemeContext';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/work/fitsync' element={<Work1Desc/>}/>
-          <Route path='/work/zervings' element={<Work2Description/>}/>
-          <Route path='/work/plotcraft' element={<Work3Desc/>}/>
-          <Route path='/work/taskflow' element={<Work4Desc/>}/>
-          <Route path='/work/eventura' element={<Work5Desc/>}/>
-          <Route path='/work/globetales' element={<Work6Desc/>}/>
-          <Route path='/work/lustre' element={<Work7Desc/>}/>
-          <Route path='/work' element={<MainWork/>}/>
-          <Route path='/about' element={<MainAbout/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/test' element={<Test/>}/>
-          <Route path='/articles/java-class-vs-java-record' element={<Article1/>}/>
-          <Route path='/articles/api-gateway-eureka' element={<Article2/>}/>
-          <Route path='/articles' element={<Articles/>}/>
-          <Route path='/awards' element={<Awards/>}/>
-        </Routes>
-      </Router>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/work/fitsync' element={<Work1Desc/>}/>
+            <Route path='/work/zervings' element={<Work2Description/>}/>
+            <Route path='/work/plotcraft' element={<Work3Desc/>}/>
+            <Route path='/work/taskflow' element={<Work4Desc/>}/>
+            <Route path='/work/eventura' element={<Work5Desc/>}/>
+            <Route path='/work/globetales' element={<Work6Desc/>}/>
+            <Route path='/work/lustre' element={<Work7Desc/>}/>
+            <Route path='/work' element={<MainWork/>}/>
+            <Route path='/about' element={<MainAbout/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/test' element={<Test/>}/>
+            <Route path='/articles/java-class-vs-java-record' element={<Article1/>}/>
+            <Route path='/articles/api-gateway-eureka' element={<Article2/>}/>
+            <Route path='/articles' element={<Articles/>}/>
+            <Route path='/awards' element={<Awards/>}/>
+          </Routes>
+        </Router>
+      </div>
+    </ThemeProvider>
   );
 }
 

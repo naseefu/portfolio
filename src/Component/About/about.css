@@ -34,3 +34,12 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Light Mode Styles */
+html.light-mode .about {
+  color: black;
+}
+
+html.light-mode .abouts {
+  color: black;
+}

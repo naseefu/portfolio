@@ -6,3 +6,8 @@
     
     color: white;
 }
+
+/* Light Mode Styles */
+html.light-mode .cliptext {
+    color: black;
+}

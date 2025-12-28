@@ -43,3 +43,9 @@
 .works1 .show-section{
   opacity: 1;
 }
+
+/* Light Mode Styles */
+html.light-mode .wcard {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}

@@ -45,6 +45,21 @@ body {
   font-family:'Instrument Sans',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+html.light-mode body {
+  color: black;
+  background-color: #f5f5f5;
+}
+
+html.light-mode {
+  --text-primary: black;
+  --text-secondary: #333333;
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --border-color: #e0e0e0;
 }
 
 body::-webkit-scrollbar{
@@ -61,4 +76,177 @@ body::-webkit-scrollbar-thumb{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Tailwind light mode overrides */
+html.light-mode {
+  --tw-text-opacity: 1;
+}
+
+html.light-mode .text-white {
+  color: black;
+}
+
+html.light-mode .text-gray-400 {
+  color: #666666;
+}
+
+html.light-mode .text-gray-700 {
+  color: #333333;
+}
+
+html.light-mode .bg-black {
+  background-color: #f5f5f5;
+}
+
+html.light-mode .bg-gray-800 {
+  background-color: #e8e8e8;
+}
+
+html.light-mode .bg-gray-900 {
+  background-color: #efefef;
+}
+
+html.light-mode .border-gray-700 {
+  border-color: #d0d0d0;
+}
+
+html.light-mode .border-gray-600 {
+  border-color: #cccccc;
+}
+
+html.light-mode .border-white {
+  border-color: black;
+}
+
+html.light-mode .hover\:bg-white:hover {
+  background-color: black;
+}
+
+html.light-mode .hover\:text-black:hover {
+  color: white;
+}
+
+html.light-mode .hover\:border-black:hover {
+  border-color: white;
+}
+
+html.light-mode body::-webkit-scrollbar-thumb {
+  background-color: rgb(170, 170, 170);
+}
+
+/* Additional light mode text color overrides */
+html.light-mode .text-gray-300 {
+  color: #555555;
+}
+
+html.light-mode .text-gray-500 {
+  color: #888888;
+}
+
+html.light-mode .text-black {
+  color: black;
+}
+
+html.light-mode span {
+  color: inherit;
+}
+
+html.light-mode h1,
+html.light-mode h2,
+html.light-mode h3,
+html.light-mode h4,
+html.light-mode h5,
+html.light-mode h6,
+html.light-mode p,
+html.light-mode a,
+html.light-mode div {
+  color: black;
+}
+
+html.light-mode a {
+  color: #0066cc;
+}
+
+html.light-mode a:hover {
+  color: #0052a3;
+}
+
+/* Input and form elements */
+html.light-mode input,
+html.light-mode textarea,
+html.light-mode select {
+  background-color: white;
+  color: black;
+  border-color: #d0d0d0;
+}
+
+html.light-mode input:focus,
+html.light-mode textarea:focus,
+html.light-mode select:focus {
+  border-color: #999999;
+  background-color: white;
+  color: black;
+}
+
+/* Cards and containers */
+html.light-mode .rounded-lg,
+html.light-mode .rounded-xl {
+  background-color: white;
+  color: black;
+}
+
+html.light-mode .shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Dark background overrides for light mode */
+html.light-mode .bg-neutral-950 {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+html.light-mode .bg-black {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+html.light-mode [class*="bg-gradient-to-b from-neutral-950"] {
+  background: linear-gradient(to bottom, rgba(245, 245, 245, 0.7) 0%, rgb(245, 245, 245) 100%) !important;
+}
+
+/* Hover effects - green to gray gradient for light mode */
+html.light-mode .hover\:bg-gradient-to-r {
+  background: transparent;
+}
+
+html.light-mode [class*="hover:bg-gradient-to-r"]:hover {
+  background: linear-gradient(to right, rgb(100, 100, 100), rgb(100, 100, 100), rgba(100, 100, 100, 0.4)) !important;
+}
+
+/* General hover gradient override for light mode */
+html.light-mode p:hover {
+  transition: all 0.3s ease;
+}
+
+/* Specific override for title hover effects with gradient */
+html.light-mode p[class*="hover:bg-gradient"]:hover {
+  background: linear-gradient(to right, rgb(100, 100, 100), rgb(100, 100, 100), rgba(100, 100, 100, 0.4)) !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Work pages: soften dark borders in light mode */
+html.light-mode .border-gray-800 {
+  border-color: #d1d5db !important;
+}
+
+/* Underline elements (home) in light mode */
+html.light-mode .underline {
+  background-color: #666666 !important;
+}
+
+/* Inputs and containers using dark borders */
+html.light-mode .border {
+  border-color: rgba(0,0,0,0.08) !important;
 }

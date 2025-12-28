@@ -58,3 +58,13 @@
 .blink-circle {
   animation: blink-circle 1.2s infinite;
 }
+
+/* Light Mode Styles */
+html.light-mode .firstref,
+html.light-mode .naseef {
+  color: black;
+}
+
+html.light-mode .gounder {
+  color: black;
+}

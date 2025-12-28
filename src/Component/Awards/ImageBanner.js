@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../ThemeContext';
 
 const ImageBanner = ({link}) => {
+    const { isDarkMode } = useContext(ThemeContext);
+    
     return (
         <div className="relative h-[16rem] w-full overflow-hidden">
             {/* Image Section */}
@@ -20,7 +23,15 @@ const ImageBanner = ({link}) => {
             </figure>
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 h-[16rem] w-full bg-gradient-to-b from-neutral-950/60 to-neutral-950 z-[-1]"></div>
+            <div 
+                className="absolute inset-0 h-[16rem] w-full z-[-1]"
+                style={{
+                    background: isDarkMode
+                        ? 'linear-gradient(to bottom, rgba(6, 6, 6, 0.6), rgb(6, 6, 6))'
+                        : 'linear-gradient(to bottom, rgba(245, 245, 245, 0.7), rgb(245, 245, 245))',
+                    transition: 'background 0.3s ease'
+                }}
+            ></div>
         </div>
     );
 };

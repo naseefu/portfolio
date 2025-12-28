@@ -12,6 +12,11 @@
   background-clip: text;
 }
 
+html.light-mode .footer{
+  background: linear-gradient(to right,rgb(61, 61, 61),white,rgb(61, 61, 61),white,rgb(61, 61, 61),white);
+  background-clip: text;
+}
+
 .overy::-webkit-scrollbar{
   scrollbar-width: none;
 }
@@ -43,4 +48,32 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Light Mode Styles */
+html.light-mode .menu {
+  color: black;
+}
+
+html.light-mode .menu:hover {
+  cursor: pointer;
+}
+
+/* Navbar overlay link colors */
+.overy a{
+  color: white;
+  text-decoration: none;
+}
+
+.overy a:hover{
+  color: #e5e7eb;
+}
+
+/* Light mode for navbar overlay links */
+html.light-mode .overy a{
+  color: black;
+}
+
+html.light-mode .overy a:hover{
+  color: #111;
 }
